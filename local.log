@@ -1,0 +1,61 @@
+
+
+BrowserStackLocal v5.6
+
+***
+Setting the -onlyAutomate parameter will stop local testing via command line from working with BrowserStack Live and BrowserStack Screenshots.
+To enable local testing via the command line for Live and Screenshots, rerun BrowserStackLocal without -onlyAutomate.
+***
+
+Press Ctrl-C to exit
+
+
+ *** Error: The connection to BrowserStack failed 10 attempts. Please try again.
+
+You need to allow outbound traffic for *.browserstack.com in your corporate firewall to setup local testing.
+For any other problem please contact support@browserstack.com.
+
+
+Configuration Options:
+-v
+	 Provides verbose logging
+-f
+	 If you want to test local folder rather internal server
+-h
+	 Prints this help
+-version
+	 Displays the version
+-force
+	 Kill other running Browserstack Local
+-only
+	 Restricts Local Testing access to specified local servers and/or folders
+-forcelocal
+	 Route all traffic via local machine
+-onlyAutomate
+	 Disable Live Testing and Screenshots, just test Automate
+-proxyHost HOST
+	Hostname/IP of proxy, remaining proxy options are ignored if this option is absent
+-proxyPort PORT
+	Port for the proxy, defaults to 3128 when -proxyHost is used
+-proxyUser USERNAME
+	Username for connecting to proxy (Basic Auth Only)
+-proxyPass PASSWORD
+	Password for USERNAME, will be ignored if USERNAME is empty or not specified
+-localIdentifier SOME_STRING
+	If doing simultaneous multiple local testing connections, set this uniquely for different processes
+
+To test an internal server, run:
+./BrowserStackLocal <KEY>
+Example:
+./BrowserStackLocal DsVSdoJPBi2z44sbGFx1
+
+To test HTML files, run:
+./BrowserStackLocal -f <KEY> <full path to local folder>
+Example:
+./BrowserStackLocal -f DsVSdoJPBi2z44sbGFx1 /Applications/MAMP/htdocs/example/
+
+View more configuration options at https://www.browserstack.com/local-testing
+Received runtime exception: Error: channel closed
+Exiting.
+You can now access your local server(s) in our remote browser.
+
