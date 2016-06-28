@@ -1,12 +1,12 @@
 {
   "name": "nightwatch-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple boilerplate for a new nightwatch.js project",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/nightwatch"
   },
-  "author": "",
+  "author": "TJ Hillard",
   "license": "ISC",
   "devDependencies": {
     "nightwatch": "^0.9.5"
