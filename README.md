@@ -1,5 +1,5 @@
-# nightwatch-new
-Simple boilerplate for a new nightwatch.js project
+# nightwatch-template
+Simple boilerplate for a new nightwatch.js project integrated with browserstack
 
 ## Setup
 
@@ -49,6 +49,12 @@ npm install
 * Firefox versions > 45 are incompatible with selenium as of July 2016.
 
 ## Running Tests
+**All browsers**
 ```
-npm run test
+npm run browserstack
+```
+
+**Specific Browser**
+```js
+npm run browserstack-{browsername} // chrome, safari, opera, ie, firefox
 ```
