@@ -45,7 +45,7 @@ nightwatch.json
 npm install
 ```
 
-### Troubleshooting ###
+## Troubleshooting
 * Firefox versions > 45 are incompatible with selenium as of July 2016.
 
 ## Running Tests

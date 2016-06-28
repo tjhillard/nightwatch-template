@@ -1,6 +1,6 @@
 module.exports = {
   before: function(browser) {
-
+    // before
   },
   'Home Page' : function (client) {
     // Test
