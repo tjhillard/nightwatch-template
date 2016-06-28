@@ -49,7 +49,12 @@ npm install
 * Firefox versions > 45 are incompatible with selenium as of July 2016.
 
 ## Running Tests
-**All browsers**
+**Locally**
+```
+npm run local
+```
+
+**All browsers via browserstack**  5 parallel te
 ```
 npm run browserstack
 ```
