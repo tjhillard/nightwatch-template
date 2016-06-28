@@ -55,6 +55,6 @@ npm run browserstack
 ```
 
 **Specific Browser**
-```
+```js
 npm run browserstack-{browsername} // chrome, safari, opera, ie, firefox
 ```
