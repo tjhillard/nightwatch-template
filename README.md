@@ -11,7 +11,7 @@ brew cask install java
 **2. Add selenium-standalone-server to project.** [Download Latest.](http://selenium-release.storage.googleapis.com/index.html) Once installed,
 create a lib folder in the projects root.
 ```
-mkdir lib && open .
+mkdir lib && open ./lib
 ```
 **3. Drag the .jar server file into your lib folder**
 
