@@ -54,7 +54,7 @@ npm install
 npm run local
 ```
 
-**All browsers via browserstack**  5 parallel te
+**All browsers via browserstack**  5 parallel tests on all major desktop browsers
 ```
 npm run browserstack
 ```
