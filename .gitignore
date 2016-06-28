@@ -4,3 +4,5 @@
 npm-debug.log
 /reports/
 selenium-debug.log
+local.log
+/local-reports
