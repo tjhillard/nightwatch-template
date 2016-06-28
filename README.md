@@ -21,14 +21,26 @@ nightwatch.json
 ```json
 "selenium" : {
     "start_process" : true,
-    "server_path" : "lib/selenium-server-standalone-{ver.ver.ver}.jar",
+    "server_path" : "lib/selenium-server-standalone-{version}.jar",
     "log_path" : "",
     "host" : "127.0.0.1",
     "port" : 4444,
     ...
 ```
 
-**5. Install nightwatch.js**
+**5. Install Chrome WebDriver** [Download Latest.](http://chromedriver.storage.googleapis.com/index.html)
+
+**6. Configure Path**
+```json
+"selenium" : {
+   ...
+    "cli_args" : {
+      "webdriver.chrome.driver" : "/Users/johndoe/chromedriver",
+      "webdriver.ie.driver" : ""
+    }
+```
+
+**6. Install nightwatch.js**
 ```
 npm install
 ```
