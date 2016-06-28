@@ -1,0 +1,108 @@
+19:53:14.092 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to /Users/tj/chromedriver
+19:53:14.160 INFO - Java: Oracle Corporation 25.91-b14
+19:53:14.160 INFO - OS: Mac OS X 10.11.4 x86_64
+19:53:14.205 INFO - v2.53.0, with Core v2.53.0. Built from revision 35ae25b
+19:53:14.388 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+19:53:14.389 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+19:53:14.390 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+19:53:14.390 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+19:53:14.392 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+19:53:14.392 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+19:53:14.531 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+19:53:14.531 INFO - Selenium Server is up and running
+19:53:15.259 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Home, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+19:53:15.276 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Home, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver (v2.9.248307) on port 26281
+19:53:17.325 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Home, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+19:53:17.351 INFO - Executing: [set window size])
+19:53:18.838 INFO - Done: [set window size]
+19:53:18.849 INFO - Executing: [get: http://www.orainteractive.com])
+19:53:20.928 INFO - Done: [get: http://www.orainteractive.com]
+19:53:20.944 INFO - Executing: [find elements: By.cssSelector: body])
+19:53:21.014 INFO - Done: [find elements: By.cssSelector: body]
+19:53:21.024 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: body]])
+19:53:21.070 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: body]]
+19:53:21.078 INFO - Executing: [find elements: By.cssSelector: .local-scroll a.jumpr])
+19:53:21.160 INFO - Done: [find elements: By.cssSelector: .local-scroll a.jumpr]
+19:53:21.166 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: .local-scroll a.jumpr]])
+19:53:21.217 INFO - Done: [is displayed: 1 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: .local-scroll a.jumpr]]
+19:53:21.226 INFO - Executing: [find element: By.cssSelector: .local-scroll a.rounder])
+19:53:21.301 INFO - Done: [find element: By.cssSelector: .local-scroll a.rounder]
+19:53:21.308 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: .local-scroll a.jumpr]])
+19:53:22.789 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (960, 461). Other element would receive the click: <div class="loader-section section-right"></div>
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.9.248307,platform=Mac OS X 10.11.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 120 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'Tjs-MacBook-Air.local', ip: '192.168.1.86', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/var/folders/x5/l9xbrl9d1zngqhns4wjj45n80000gn/T/.org.chromium.Chromium.SoVlrv}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=51.0.2704.103, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 110892862984a9af4c51b3a976a2fa37
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:348)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.click(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:53:22.801 WARN - Exception: unknown error: Element is not clickable at point (960, 461). Other element would receive the click: <div class="loader-section section-right"></div>
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.9.248307,platform=Mac OS X 10.11.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 120 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'Tjs-MacBook-Air.local', ip: '192.168.1.86', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/var/folders/x5/l9xbrl9d1zngqhns4wjj45n80000gn/T/.org.chromium.Chromium.SoVlrv}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=51.0.2704.103, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 110892862984a9af4c51b3a976a2fa37
+19:53:24.914 INFO - Executing: [find elements: By.cssSelector: #welcome .container .row .twelve p.subtitle])
+19:53:25.007 INFO - Done: [find elements: By.cssSelector: #welcome .container .row .twelve p.subtitle]
+19:53:25.015 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:25.037 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:25.547 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:25.576 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:26.090 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:26.106 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:26.615 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:26.638 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:27.150 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:27.160 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:27.670 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:27.685 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:28.193 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:28.205 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:28.716 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:28.725 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:29.233 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:29.242 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:29.751 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:29.760 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:30.269 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]])
+19:53:30.277 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on MAC (110892862984a9af4c51b3a976a2fa37)] -> css selector: #welcome .container .row .twelve p.subtitle]]
+19:53:30.286 INFO - Executing: [delete session: 33a6df9a-9cfa-4d46-8ae9-6a8bf898a2da])
+19:53:30.526 INFO - Done: [delete session: 33a6df9a-9cfa-4d46-8ae9-6a8bf898a2da]
