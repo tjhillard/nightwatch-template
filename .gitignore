@@ -6,3 +6,4 @@ npm-debug.log
 selenium-debug.log
 local.log
 /local-reports
+/tests-output
