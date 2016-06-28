@@ -1,4 +1,4 @@
-# nightwatch-scaffold
+# nightwatch-new
 Simple boilerplate for a new nightwatch.js project
 
 ### Setup
@@ -44,3 +44,6 @@ nightwatch.json
 ```
 npm install
 ```
+
+### Troubleshooting
+* Firefox versions > 45 are incompatible with selenium as of July 2016.
