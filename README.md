@@ -15,7 +15,7 @@ mkdir lib && open ./lib
 ```
 **3. Drag the .jar server file into your lib folder**
 
-**4. Configure path.**
+**4. Configure path.** Ensure you reference the correct version.
 
 nightwatch.json
 ```json
