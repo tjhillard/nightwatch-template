@@ -1,7 +1,7 @@
 # nightwatch-new
 Simple boilerplate for a new nightwatch.js project
 
-### Setup
+## Setup
 
 **1.Install JDK/Java**
 ```
@@ -45,5 +45,12 @@ nightwatch.json
 npm install
 ```
 
-### Troubleshooting
+## Troubleshooting
 * Firefox versions > 45 are incompatible with selenium as of July 2016.
+
+## Running Tests
+```
+npm run test
+```
+
+
