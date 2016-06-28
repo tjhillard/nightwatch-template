@@ -4,7 +4,11 @@
   "description": "Simple boilerplate for a new nightwatch.js project",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/nightwatch"
+    "local": "nightwatch tests/* -c nightwatch.js",
+    "browserstack": "nightwatch tests/* -c browserstack/browserstack.json",
+    "browserstack-safari": "nightwatch -e safari",
+    "browserstack-opera": "nightwatch -e opera",
+    "browserstack-ie": "nightwatch -e ie"
   },
   "author": "TJ Hillard",
   "license": "ISC",

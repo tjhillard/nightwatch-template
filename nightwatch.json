@@ -7,27 +7,53 @@
   "globals_path" : "",
 
   "selenium" : {
-    "start_process" : true,
+    "start_process" : false,
     "server_path" : "lib/selenium-server-standalone-2.53.0.jar",
     "log_path" : "",
-    "host" : "127.0.0.1",
-    "port" : 4444,
+    "host" : "hub.browserstack.com",
+    "port" : 80,
     "cli_args" : {
-      "webdriver.chrome.driver" : "/Users/johndoe/Drivers/chromedriver",
-      "webdriver.ie.driver" : ""
+      "webdriver.chrome.driver" : "/Users/tjhillard/Drivers/chromedriver",
+      "webdriver.opera.driver" : "/Users/tjhillard/Drivers/operadriver-v1.1.jar"
     }
   },
 
   "test_settings" : {
     "default" : {
-      "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
-      "selenium_host"  : "localhost",
+      "launch_url" : "http://hub.browserstack.com",
+      "selenium_port"  : 80,
+      "selenium_host"  : "hub.browserstack.com",
       "silent": true,
       "screenshots" : {
         "enabled" : false,
         "path" : ""
       },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "browserstack.user": "tjhillard2",
+        "browserstack.key": "sERx582EV3yJpqgpGRdE",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "browserstack-chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "browserstack-safari": {
+      "desiredCapabilities": {
+        "browserName": "safari",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "browserstack-firefox": {
       "desiredCapabilities": {
         "browserName": "firefox",
         "javascriptEnabled": true,
@@ -35,9 +61,9 @@
       }
     },
 
-    "chrome" : {
+    "browserstack-ie": {
       "desiredCapabilities": {
-        "browserName": "chrome",
+        "browserName": "internet explorer",
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
