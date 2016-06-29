@@ -8,39 +8,36 @@ Simple boilerplate for a new nightwatch.js project integrated with browserstack
 brew cask install java
 ```
 
-**2. Add selenium-standalone-server to project.** [Download Latest.](http://selenium-release.storage.googleapis.com/index.html) Once installed,
-create a lib folder in the projects root.
+**2. Add selenium-standalone-server to project.** 
+via npm (recommended)
 ```
-mkdir lib && open ./lib
+npm install selenium-standalone@latest -g
 ```
-**3. Drag the .jar server file into your lib folder**
+```
+selenium-standalone install --version=2.53.0 --basePath=lib/ 
+```
+*OR* (not recommended)
+[Download Latest.](http://selenium-release.storage.googleapis.com/index.html) and drag .jar file into lib/ folder.
 
-**4. Configure path.** Ensure you reference the correct version.
+**3. Configure paths.** If you download manually, ensure you reference the correct version.
 
 nightwatch.json
 ```json
 "selenium" : {
     "start_process" : true,
-    "server_path" : "lib/selenium-server-standalone-{version}.jar",
+    "server_path" : "lib/selenium-standalone/2.5.3-server.jar",
     "log_path" : "",
     "host" : "127.0.0.1",
     "port" : 4444,
     ...
 ```
-
-**5. Install Chrome WebDriver** [Download Latest.](http://chromedriver.storage.googleapis.com/index.html)
-
-**6. Configure Path**
 ```json
-"selenium" : {
-   ...
-    "cli_args" : {
-      "webdriver.chrome.driver" : "/Users/johndoe/chromedriver",
-      "webdriver.ie.driver" : ""
+"cli_args" : {
+      "webdriver.chrome.driver" : "lib/chromedriver/2.22-x64-chromedriver"
     }
 ```
 
-**6. Install nightwatch.js**
+**4. Install nightwatch.js**
 ```
 npm install
 ```
