@@ -13,6 +13,7 @@ via npm (recommended)
 ```
 npm install selenium-standalone@latest -g
 ```
+while in project root directory
 ```
 selenium-standalone install --version=2.53.0 --basePath=lib/ 
 ```
