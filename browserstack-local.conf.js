@@ -1,6 +1,8 @@
+require('dotenv').config();
+
 local_config = {
   "src_folders" : ["tests"],
-  "output_folder" : "reports",
+  "output_folder" : "browserstack-reports",
   "custom_commands_path" : "",
   "custom_assertions_path" : "",
   "page_objects_path" : "",
@@ -18,8 +20,8 @@ local_config = {
       "selenium_port": 80,
       "silent": true,
       "desiredCapabilities": {
-        "browserstack.user": 'tjhillard2',
-        "browserstack.key": 'sERx582EV3yJpqgpGRdE',
+        "browserstack.user": process.env.BROWSERSTACK_USERNAME,
+        "browserstack.key": "process.env.BROWSERSTACK_KEY",
         "browserstack.debug": true,
         "browserstack.local": true
       }

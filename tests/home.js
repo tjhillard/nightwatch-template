@@ -16,5 +16,10 @@ module.exports = {
       .waitForElementVisible('#welcome .container .row .twelve p.subtitle', 5000)
       .assert.containsText('#welcome .container .row .twelve p.subtitle', 'Hello there, we are')
       .end();
+  },
+  after: function(results) {
+    if (results.currentTest.results.failed > 0) {
+      require('../scripts/slack.js').slack(results.currentTest);
+    }
   }
 };

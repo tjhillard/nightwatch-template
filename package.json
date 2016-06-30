@@ -5,17 +5,25 @@
   "main": "index.js",
   "scripts": {
     "local": "nightwatch --config ./local.json",
+    "local-iphone": "nightwatch -e iphone --config ./mobile-local.conf.js",
     "browserstack-local": "node scripts/browserstack-local.js",
     "browserstack": "nightwatch -e browserstack-chrome,browserstack-firefox,browserstack-safari,browserstack-opera,browserstack-ie --config ./browserstack.json",
-    "browserstack-chrome": "nightwatch -e browserstack-chrome --config ./browserstack.json",
-    "browserstack-safari": "nightwatch -e browserstack-safari --config ./browserstack.json",
-    "browserstack-opera": "nightwatch -e browserstack-opera --config ./browserstack.json",
-    "browserstack-ie": "nightwatch -e browserstack-ie --config ./browserstack.json",
-    "browserstack-firefox": "nightwatch -e browserstack-firefox --config ./browserstack.json"
+    "browserstack-chrome": "nightwatch -e browserstack-chrome --config ./browserstack.conf.js",
+    "browserstack-safari": "nightwatch -e browserstack-safari --config ./browserstack.conf.js",
+    "browserstack-opera": "nightwatch -e browserstack-opera --config ./browserstack.conf.js",
+    "browserstack-ie": "nightwatch -e browserstack-ie --config ./browserstack.conf.js",
+    "browserstack-firefox": "nightwatch -e browserstack-firefox --config ./browserstack.conf.js",
+    "browserstack-iphone": "nightwatch -e browserstack-iphone6,browserstack-iphone5 --config ./browserstack.conf.js",
+    "browserstack-iphone6": "nightwatch -e browserstack-iphone6 --config ./browserstack.conf.js",
+    "browserstack-iphone5": "nightwatch -e browserstack-iphone5 --config ./browserstack.conf.js"
   },
   "author": "TJ Hillard",
   "license": "ISC",
   "devDependencies": {
     "nightwatch": "^0.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "slack-node": "^0.2.0"
   }
 }

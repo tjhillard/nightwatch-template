@@ -1,6 +1,8 @@
-{
+require('dotenv').config();
+
+browserstack_config = {
   "src_folders" : ["tests/"],
-  "output_folder" : "reports",
+  "output_folder" : "browserstack-reports",
   "custom_commands_path" : "",
   "custom_assertions_path" : "",
   "page_objects_path" : "",
@@ -30,8 +32,9 @@
       },
       "desiredCapabilities": {
         "browserName": "chrome",
-        "browserstack.user": "tjhillard2",
-        "browserstack.key": "sERx582EV3yJpqgpGRdE",
+        "browserstack.user": process.env.BROWSERSTACK_USERNAME,
+        "browserstack.key": process.env.BROWSERSTACK_KEY,
+        "browserstack.debug": true,
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
@@ -75,6 +78,30 @@
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
-    }
+    },
+
+    "browserstack-iphone6" : {
+       "desiredCapabilities": {
+         "browserName": "Safari",
+         "platformName": "iOS",
+         "deviceName": "iPhone 6",
+         "platformVersion": "9.3",
+         "javascriptEnabled": true,
+         "acceptSslCerts": true
+       }
+     },
+
+     "browserstack-iphone5" : {
+        "desiredCapabilities": {
+          "browserName": "Safari",
+          "platformName": "iOS",
+          "deviceName": "iPhone 5",
+          "platformVersion": "9.3",
+          "javascriptEnabled": true,
+          "acceptSslCerts": true
+        }
+      }
   }
-}
+};
+
+module.exports = browserstack_config;
