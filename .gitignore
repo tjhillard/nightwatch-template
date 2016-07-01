@@ -9,3 +9,4 @@ selenium-debug.log
 local.log
 /local-reports
 /tests-output
+/browserstack-reports
