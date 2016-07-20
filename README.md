@@ -43,6 +43,9 @@ nightwatch.json
 npm install
 ```
 
+**5. Setup .env**
+* Rename ```.env.example``` to ```.env``` add any applicable config variables. 
+
 ## Troubleshooting
 * Firefox versions > 45 are incompatible with selenium as of July 2016.
 
